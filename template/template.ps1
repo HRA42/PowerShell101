@@ -1,5 +1,6 @@
 <#
     Author:     FirstName LastName
+    GitHub:     https://GitHub.com/Username
     Date:       01.01.2042
     Version:    1.0
     .Synopsis
@@ -15,7 +16,8 @@ If (!(Test-Path $tempFolder)) {
     New-Item -ItemType Directory -Path $tempFolder
 }
 
-Start-Transcript "$tempFolder\nameOfTheScript.log"
+$currentScript = ($MyInvocation.MyCommand.Name) -replace ".ps1", ""
+Start-Transcript "$tempFolder\$(Split-Path -Leaf $currentScript).log"
 
 <#
 ----------------------------------

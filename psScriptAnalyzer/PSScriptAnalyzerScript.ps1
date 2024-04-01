@@ -25,13 +25,16 @@ $currentScript = ($MyInvocation.MyCommand.Name) -replace ".ps1", ""
 Start-Transcript "$tempFolder\$(Split-Path -Leaf $currentScript).log"
 
 # If the scriptPath or settingsPath are not provided, prompt the user to enter them
-if ($null -eq $scriptPath)  {
-    $scriptPath = Read-Host "Enter the path to the script inlcuding the script name"
-} elseif ($null -eq $settingsPath) {
-    $settingsPath = Read-Host "Enter the path to PSScriptAnalyzerSettings.psd1 including the file name"
+if (-not $scriptPath) {
+    $scriptPath = Read-Host "Enter the path to the script you want to analyze"
 } else {
-    Write-Output "The script path is $scriptPath and the settings path is $settingsPath"
-    Write-Output "The PSScriptAnalyzer will be invoked."
+    Write-Output "The script path is $scriptPath"
+}
+
+if (-not $settingsPath) {
+    $settingsPath = Read-Host "Enter the path to the settings file you want to use"
+} else {
+    Write-Output "The settings path is $settingsPath"
 }
 
 # Invoke the PSScriptAnalyzer

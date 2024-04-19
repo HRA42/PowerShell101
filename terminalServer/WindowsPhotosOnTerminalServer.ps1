@@ -23,7 +23,7 @@ Definition of variables
 ----------------------------------
 #>
 # Define needed RegKeys here
-jpeRegfile = @"
+$jpeRegfile = @"
 Windows Registry Editor Version 5.00
 
 [-HKEY_CLASSES_ROOT\.jpe]

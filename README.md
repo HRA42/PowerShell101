@@ -10,11 +10,15 @@ This repository contains a collection of PowerShell scripts for various tasks on
 
     2.1 [PSScriptAnalyzerSettings.psd1](psScriptAnalyzer/PSScriptAnalyzerSettings.psd1): This file contains settings for the PSScriptAnalyzer invocation.
 
-### Terminal Server Clients
-3. [deactivateUDPforRDP.ps1](terminalServerClient/deactivateUDPforRDP.ps1): This script deactivates UDP for RDP.
+### Software Installation
+3. [upgradeDatevSiPaCompact.ps1](softwareInstall/upgradeDatevSiPaCompact.ps1): This script allows users to install or upgrade to the current version of Datev Sicherheitspaket compact.
 
 ### Template for new PowerShell Scripts
 4. [template.ps1](template/template.ps1): This is a template for creating new PowerShell scripts.
+
+### Terminal Server Clients
+5. [deactivateUDPforRDP.ps1](terminalServerClient/deactivateUDPforRDP.ps1): This script deactivates UDP for RDP.
+6. [WindowsPhotosOnTerminalServer.ps1]: This script activates the Windows Photo Viewer on a Terminal Server and sets it as default for images.
 
 ## Usage
 Each script can be run from the PowerShell command line. Some scripts may require additional parameters or user input.

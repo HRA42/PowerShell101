@@ -18,7 +18,7 @@ This repository contains a collection of PowerShell scripts for various tasks on
 
 ### Terminal Server Clients
 5. [deactivateUDPforRDP.ps1](terminalServerClient/deactivateUDPforRDP.ps1): This script deactivates UDP for RDP.
-6. [WindowsPhotosOnTerminalServer.ps1]: This script activates the Windows Photo Viewer on a Terminal Server and sets it as default for images.
+6. [WindowsPhotosOnTerminalServer.ps1](terminalServer\WindowsPhotosOnTerminalServer.ps1): This script activates the Windows Photo Viewer on a Terminal Server and sets it as default for images.
 
 ## Usage
 Each script can be run from the PowerShell command line. Some scripts may require additional parameters or user input.
